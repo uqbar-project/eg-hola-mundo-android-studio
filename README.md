@@ -11,8 +11,8 @@ Este proyecto está generado para
 * con Gradle 2.14.1 (el que viene con Android Studio)
 * para una SDK 24 (Nougat)
 
-## Dependencias
+## Integración
 
 * **Retrofit**: es un framework que simplifica la llamada a servicios REST
-
+* El servicio REST se puede ver desde un browser accediendo a la siguiente URL: http://rest-service.guides.spring.io/greeting
 
