@@ -3,3 +3,4 @@
 /build
 /captures
 app/build/
+.gradle
