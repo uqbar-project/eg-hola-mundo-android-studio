@@ -16,7 +16,7 @@
 
             <ImageView android:layout_height="wrap_content"
                 android:layout_width="60dp"
-                android:src="@drawable/icon"
+                android:src="@drawable/icon_world"
                 />
 
             <TextView

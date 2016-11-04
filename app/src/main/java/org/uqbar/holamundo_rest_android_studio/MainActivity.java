@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.IOException;
 
 import retrofit.Call;
 import retrofit.Callback;
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        final String BASE_URL = "http://rest-service.guides.spring.io/greeting";
+        final String BASE_URL = "http://rest-service.guides.spring.io";
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Throwable t) {
                 Log.e("HelloWorld", t.getMessage());
+                Toast.makeText(MainActivity.this, "Ha ocurrido un error al llamar al servicio", Toast.LENGTH_LONG).show();
             }
         });
     }
